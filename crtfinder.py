@@ -35,7 +35,7 @@ def get_user_input():
 	(options, arguments) = parser.parse_args()
 	if not options.target_url:
 		print(colored("\n[-] ", 'red') + colored("Target url doesn't exist, see --help for more info", 'cyan'))
-		print(colored("[+] ", 'red') + colored("Usage: python ctrfinder.py -t target.com", 'cyan'))
+		print(colored("[+] ", 'red') + colored("Usage: python ctrfinder.py -u target.com", 'cyan'))
 		print(" ")
 		raise SystemExit 
 	else: 
