@@ -129,11 +129,16 @@ for line in subdomains[3]:
 for line in all_subdomains: 
 	print(line)
 output_file = word + ".txt"
-print(colored("\n[+] ", "red") + colored("Founded: " + str(len(all_subdomains)) + " domain related to " + word, "white", attrs=['bold']))
-print(colored("[+] ", "red") + colored("Done. Output file name: " + output_file + "\n", "white", attrs=['bold']))
 
-#get the output to text file 
-sys.stdout = open(output_file, "w+")
-for line in all_subdomains: 
-	print(line)
-sys.stdout.close()
+#this condition to make file only if there's a subdomains. 
+if len(all_subdomains) > 0: 
+	print(colored("\n[+] ", "red") + colored("Founded: " + str(len(all_subdomains)) + " domain related to " + word, "white", attrs=['bold']))
+	print(colored("[+] ", "red") + colored("Done. Output file name: " + output_file + "\n", "white", attrs=['bold']))
+	#get the output to text file 
+	sys.stdout = open(output_file, "w+")
+	for line in all_subdomains: 
+		print(line)
+	sys.stdout.close()
+else: 
+	print(colored("[+] ", "red") + colored("There's no subdomains related to: " + word + "\n", "white", attrs=['bold']))
+
