@@ -125,12 +125,13 @@ for line in subdomains[3]:
 	if line not in all_subdomains: 
 		all_subdomains.append(line)
 
+		
 #loop to show the result at the terminal 
 for line in all_subdomains: 
 	print(line)
 output_file = word + ".txt"
 
-if len(all_subdomains) > 0: 
+if len(all_subdomains) > 1: 
 	print(colored("\n[+] Founded: ", "red") + colored(str(len(all_subdomains)) + " domain related to " + word, "white", attrs=[]))
 	print(colored("[+] Output file name: ", "red") + colored(output_file + "\n", "white", attrs=[]))
 	#get the output to text file 
@@ -139,7 +140,11 @@ if len(all_subdomains) > 0:
 		print(line)
 	sys.stdout.close()
 else: 
-	print(colored("[-] There's no subdomains related to: " , "red") + colored(word + "\n", "white"))
+	if len(all_subdomains) == 0: 
+		print(colored("\n[-] There's no subdomains related to: " , "red") + colored(word + "\n", "white"))
+	else: 
+		print(colored("\n[-] No additional subdomains!\n" , "red"))
+
 
 
 
