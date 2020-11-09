@@ -40,7 +40,7 @@ def get_user_input():
 		raise SystemExit 
 	else: 
 		target_word = options.target_url.split(".")[0]
-		print(colored("[+] ", 'red') + colored("Getting the results from crt.sh with this keywords:", 'cyan', attrs=['bold']) + colored(" *." + target_word + " / " + target_word + ".*", "white"))
+		print(colored("[+] ", 'red') + colored("Getting the results from crt.sh with this keywords:", 'cyan', attrs=['bold']) + colored(" *." + target_word + ".com / " + target_word + ".*", "white"))
 		print(colored("[+] ", 'red') + colored("Start collecting info for: ", "cyan", attrs=["bold"]) + colored( target_word + "\n" , 'white' , attrs=[]))
 		return options.target_url
 
@@ -130,7 +130,6 @@ for line in all_subdomains:
 	print(line)
 output_file = word + ".txt"
 
-#this condition to make file only if there's a subdomains. 
 if len(all_subdomains) > 0: 
 	print(colored("\n[+] ", "red") + colored("Founded: " + str(len(all_subdomains)) + " domain related to " + word, "white", attrs=['bold']))
 	print(colored("[+] ", "red") + colored("Done. Output file name: " + output_file + "\n", "white", attrs=['bold']))
@@ -140,5 +139,7 @@ if len(all_subdomains) > 0:
 		print(line)
 	sys.stdout.close()
 else: 
-	print(colored("[+] ", "red") + colored("There's no subdomains related to: " + word + "\n", "white", attrs=['bold']))
+	print(colored("[-] There's no subdomains related to: " , "red") + colored(word + "\n", "white"))
+
+
 
