@@ -131,8 +131,8 @@ for line in all_subdomains:
 output_file = word + ".txt"
 
 if len(all_subdomains) > 0: 
-	print(colored("\n[+] ", "red") + colored("Founded: " + str(len(all_subdomains)) + " domain related to " + word, "white", attrs=['bold']))
-	print(colored("[+] ", "red") + colored("Done. Output file name: " + output_file + "\n", "white", attrs=['bold']))
+	print(colored("\n[+] Founded: ", "red") + colored(str(len(all_subdomains)) + " domain related to " + word, "white", attrs=[]))
+	print(colored("[+] Output file name: ", "red") + colored(output_file + "\n", "white", attrs=[]))
 	#get the output to text file 
 	sys.stdout = open(output_file, "w+")
 	for line in all_subdomains: 
