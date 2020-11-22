@@ -23,12 +23,14 @@ This will come back with the subdomains from search keywords:
 %.domain.com
 domain.% 
 ```
-and the output file will be `domain.txt` which contain the output. 
+and the output file will be `domain.txt` which will contain the results. 
 
 #### 2. Advanced search 
 ` python dig.py domain.txt ` 
 
 this step will take more time but it will get more and more subdomains 
+
+/!\ Note: Don't change the text file name and use the one which get back from the first step (domain.txt)
 
 -----------------------------------------
 
