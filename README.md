@@ -27,12 +27,15 @@ and the output file will be `domain.txt` which contain the output.
 
 #### 2. Advanced search 
 ` python dig.py domain.txt ` 
+
 this step will take more time but it will get more and more subdomains 
 
 -----------------------------------------
 
-#### Case study on `dell.com`
+### Case study
 
+Website `dell.com`
+ 
 **Standard serach ~ 4000 subdomain**
 
 **Advanced search ~ 13000 subdomain**
