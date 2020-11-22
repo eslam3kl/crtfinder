@@ -1,22 +1,40 @@
-# crtfinder
-Simple script tool to extract all subdomains from **crt.sh** website. Output will be up to *sub.sub.sub.subdomain.com*
+# crtfinder v2 
+Here's the new version of CrtFinder tool which collect subdomains from crt.sh. 
+
+The new update come with more scripts which collect more and more subdomains form the same site but in more intelligence techniques <3 
+
+
+![intro](https://github.com/eslam3kl/crtfinder/blob/v2/intro.png)
+
+-----------------------------------------
 
 ### How to install 
 ` pip install -r requirments.txt`
 
+-----------------------------------------
+
+
 ### How to use it 
+#### 1. Starndard search 
 ` python crtfinder.py -u domain.com `
+
+This will come back with the subdomains from search keywords:
+```
+%.domain.com
+domain.% 
+```
+and the output file will be `domain.txt` which contain the output. 
+
+#### 2. Advanced search 
+` python dig.py domain.txt ` 
+this step will take more time but it will get more and more subdomains 
+
+-----------------------------------------
+
+#### Case study on `dell.com`
+
+**Standard serach ~ 4000 subdomain**
+
+**Advanced search ~ 13000 subdomain**
  
  
-### Examples 
-![Welcome](Start.png)
-
-#### Results will be in text file contain all output subdomains. 
-It collects almost _2900_ subdomains for the domain `yahoo.com` only, you should take some of juicy subdomains and search for them also. 
-
-Ex. `python crtfinder.py -u corp.yahoo.com`
-
-It will get back to you some of interesting subdomains in addition to the original subdomains.
-
-![End](End.png)
-
