@@ -26,7 +26,7 @@ domain.%
 and the output file will be `domain.txt` which will contain the results. 
 
 #### 2. Advanced search 
-` python dig.py domain.txt ` 
+` python dig.py domain.txt | tee -a more_subdomains.txt` 
 
 this step will take more time but it will get more and more subdomains 
 
