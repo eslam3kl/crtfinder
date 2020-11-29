@@ -33,6 +33,9 @@ this step will take more time but it will get more and more subdomains
 /!\ Note: Don't change the text file name and use the one which get back from the first step (domain.txt)
 
 -----------------------------------------
+#### Note
+If you need to increase the speed in the advanced mode so edit the code of ` repeat_crt.py ` script and delete the comment at the end of it, but you must have good CPU for Multi-threading. 
+
 
 ### Case study
 
