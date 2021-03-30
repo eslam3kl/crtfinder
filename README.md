@@ -1,4 +1,4 @@
-# crtfinder
+# CrtFinder v1.0
 Simple script tool to extract all subdomains from **crt.sh** website. Output will be up to *sub.sub.sub.subdomain.com*
 
 ![Welcome](Start.png)
