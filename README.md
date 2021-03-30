@@ -11,10 +11,12 @@ Simple script tool to extract all subdomains from **crt.sh** website. Output wil
 ### Version 1.1, what's new? 
 1. Upgrade to python3 
 2. Add `dig.py` script to make advanced enumeration. 
-
-### Case Study @dell.com: 
-Version 1.0 ~ 4k subdomain 
-Version 1.1 ~ 17k subdomain using advanced mode. 
+```
+# Default mode: it will return the default output ~ 4K subdomain
+python3 crtfinder.py -u dell.com | tee -a subdomains.txt 
+# Advanced mode: it will return ~ 14k subdomain
+python3 dig.py subdomains.txt  
+```
 
 --------------------------
 ### Installation  
