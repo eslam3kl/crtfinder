@@ -40,7 +40,7 @@ def get_user_input():
 		raise SystemExit 
 	else: 
 		target_word = options.target_url.split(".")[0]
-		print(colored("[+] ", 'red') + colored("Getting the results from crt.sh with this keywords:", 'cyan', attrs=['bold']) + colored(" *." + target_word + ".com / " + target_word + ".*", "white"))
+		print(colored("[+] ", 'red') + colored("Getting the results from crt.sh with these keywords:", 'cyan', attrs=['bold']) + colored(" *." + target_word + ".com / " + target_word + ".*", "white"))
 		print(colored("[+] ", 'red') + colored("Start collecting info for: ", "cyan", attrs=["bold"]) + colored( target_word + "\n" , 'white' , attrs=[]))
 		return options.target_url
 
